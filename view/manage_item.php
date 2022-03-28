@@ -15,8 +15,11 @@ $query="SELECT * FROM add_item";
     $total=mysqli_num_rows($data);
 ?>
 <?php include 'header.php' ?>
-<section  class="container">
-<div>
+<section style="display: flex;" class="container">
+<?php include 'sub_nav.php' ?>
+<div style="margin-left: 100px;">
+    <h1 style="margin-left: 34px; color: blue;">List of item</h1>
+    <button style="margin-left: 650px; position: absolute; top: 114px; font-size: .9rem;" class="btn"><a style="text-decoration: none; color: white;" href="add_item.php">Add New</a></button>
     <table border="1" cellspacing="0" width="770px" >
             <thead>
                 <tr>
@@ -43,3 +46,6 @@ while($result=mysqli_fetch_assoc($data)){
         </table>
     </div>
 </section>
+<script>
+
+</script>

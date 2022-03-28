@@ -20,9 +20,9 @@ $query="SELECT * FROM add_item";
     <div>
         <h1>Add Your Order</h1>
         <form action="../php/order/order.php" method="post" class="myform">
-            <div style="color: green;">
+            <div>
             <?php if(isset($_GET['sucessmsg'])){ ?>
-                 <div>
+                 <div style="color: green;">
                      <?php echo $_GET['sucessmsg']; ?>
                  </div>
       <?php } ?>

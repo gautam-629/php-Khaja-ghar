@@ -6,8 +6,11 @@
     }
     ?>
 <?php include 'header.php' ?>
-<section style="display: flex; justify-content: center; align-items: center;" class="container">
-    <div>
+<section style="display:flex;" class="container">
+<div>
+<?php include 'sub_nav.php' ?>
+</div>
+    <div style="margin-left: 250px; width: 350px;">
         <h1>Add Item</h1>
         <form action="../php/Add_item/add_item.php" method="post" class="myform" enctype="multipart/form-data">
             

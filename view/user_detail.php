@@ -15,9 +15,11 @@ $query="SELECT * FROM users";
 ?>
 
 <?php include 'header.php' ?>
-<section style="margin-top: 34px;" class="container">
-    <div>
-    <h1 style="margin-left: 300px;">User List</h1>
+<section style="margin-top: 20px; display: flex;" class="container">
+<?php include 'sub_nav.php' ?>
+    <div style="margin-left: 70px;">
+    <h1 style="margin-left: 34px; color: blue;">User List</h1>
+    <button style="margin-left: 625px; position: absolute; top: 130px; font-size: .9rem;" class="btn"><a style="text-decoration: none; color: white;" href="add_new.php">Add New</a></button>
     <?php if($total!=0){     ?>
         <table border="1" cellspacing="0" width="720px">
             <thead>

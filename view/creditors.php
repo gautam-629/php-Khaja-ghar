@@ -94,4 +94,5 @@ include '../php/partials/dbconnect.php';
               return a;
           }
       </script>
+        <button style="margin-left: 625px; position: absolute; top: 350px; font-size: .9rem;" class="btn"><a style="text-decoration: none; color: white;" href="order_detail.php">go back</a></button>
 </section>

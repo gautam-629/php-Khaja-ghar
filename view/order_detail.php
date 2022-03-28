@@ -12,11 +12,12 @@ $query="SELECT * FROM order_table";
 
 ?>
 <?php include 'header.php' ?>
-<section style="margin-top: 50px;" class="container">
-    <div >
-        <h1 style="margin-left: 300px;">Order List</h1>
+<section style=" display: flex;" class="container">
+<?php include 'sub_nav.php' ?>
+    <div style="margin-left: 85px;">
+        <h1 style="margin-left: 300px; color: blue;">Order List</h1>
     <?php if($total!=0){     ?>
-        <table border="1" cellspacing="0" class="mytable" width="720px">
+        <table border="1" cellspacing="0" class="mytable" width="800px">
             <thead>
                 <tr>
                     <th>itemname</th>
@@ -36,7 +37,7 @@ while($result=mysqli_fetch_assoc($data)){
       <td>".$result['ttime']."</td>
       <td>".$result['name']."</td>
       <td>".$result['pnumber']."</td>
-      <td><a href='../php/order/orderdelete.php? oid=$result[oid]' onclick='return show()'><img style='width: 30px; text-align: center;' src='../public/img/delete_icon.png'></a> </td>
+      <td><a href='../php/order/orderdelete.php? oid=$result[oid]' onclick='return show()'><img style='width: 20px; text-align: center;' src='../public/img/delete_icon.png'></a> </td>
     </tr>";
     }       
 }
