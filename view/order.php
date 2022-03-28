@@ -61,7 +61,7 @@ $query="SELECT * FROM add_item";
             </div>
             <div style="display: flex; align-items: center; ">
                 <button class="btn" type="submit">Order Now</button> <br>
-                <!-- <span><a style="margin-left: 5px; color: blue;" href="login.php">Alreay have account?</a></span> -->
+                <button style=" margin-left: 5px; font-size: .9rem;" class="btn"><a style="text-decoration: none; color: white;" href="view_order.php">View order</a></button>
             </div>
         </form>
     </div>

@@ -23,6 +23,11 @@
       $result=mysqli_query($conn,$sql);
       
     if($result){
+
+      // session_start();
+      // $_SESSION['username']=$name;
+      // $_SESSION['pnumber']=$pnumber;
+
       $showAlert=true;
       header("location: ../../view/login.php");
     }

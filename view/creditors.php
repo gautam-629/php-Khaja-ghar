@@ -59,7 +59,7 @@ include '../php/partials/dbconnect.php';
       <div>
       <h1 style="margin-left: 300px;">Creditors List</h1>
        <?php if($total!=0){     ?>
-            <table  border="1" cellspacing="0" width="650px">
+            <table  border="1" cellspacing="0" width="760px">
                 <thead>
                     <tr>
                         <th>Customer Name</th>

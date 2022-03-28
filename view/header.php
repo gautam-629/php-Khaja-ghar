@@ -3,6 +3,7 @@ error_reporting(0);
 session_start();
 if(isset($_SESSION['loggedin']) && $_SESSION['loggedin']==true){
     $loggedin= true;
+    $user=true;
   }
   else{
     $loggedin = false;
@@ -63,6 +64,7 @@ echo '<!DOCTYPE html>
                  </ul>
                 </li>';
             }
+
                 if($loggedin==false){
               echo  '<li>
                     <a href="register.php">Register</a>
@@ -76,8 +78,17 @@ echo '<!DOCTYPE html>
                     <a href="../php/users/logout.php">logout</a>
                 </li> ';
                 }
+                if($user==true && $admin==false){ 
+                    echo ' 
+                  <li>
+                  <a href="view_order.php">view order</a>
+              </li>
+              <li>
+              <a href="order.php">order</a>
+          </li> ';
+                      }
           echo'</ul>
-
+          
         </div>
     </nav>';
     ?>
